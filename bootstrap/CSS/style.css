@@ -1,0 +1,102 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+  body{
+  margin:0px;
+  padding:0px;
+  overflow-X:hidden;
+  overflow-Y:scroll;
+  }
+  .beauty-color{
+    background-image: linear-gradient(to right top, #a93ada, #e71aac, #ff327f, #ff5e59, #f98741, #f98d44, #fa9347, #fa994b, #ff835f, #ff6e7c, #ff609f, #fb5fc5);
+  }
+  .below-nav{
+    
+    padding-top: 200px;
+  }
+.menu {
+  position:relative;
+  width:90%;
+  z-index:9999;
+  }
+.top-navbar {
+  width:100%;
+  padding:20px 20px;
+  background-image: linear-gradient(to top, #061230, #0b1b3f, #11244e, #172d5e, #1e366e, #1d366d, #1d366c, #1c366b, #152c58, #0e2247, #081935, #040e25);background-image: linear-gradient(to right bottom, #233666, #24386c, #253b71, #253d77, #26407d, #253f7c, #233d7a, #223c79, #1f3770, #1b3167, #182c5e, #142755);
+  position:absolute;
+  top:20px;
+  left:0;
+  z-index:999;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .bottom-navbar {
+    opacity: 90%;
+    background-image: linear-gradient(to left bottom,#061230, #0b1b3f, #11244e, #172d5e, #1e366e, #1d366d, #1d366c, #1c366b, #152c58, #0e2247, #081935, #040e25);background-image: linear-gradient(to right bottom, #233666, #24386c, #253b71, #253d77, #26407d, #253f7c, #233d7a, #223c79, #1f3770, #1b3167, #182c5e, #142755);
+    box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+    }
+  .my-modal {
+      opacity: 50%;
+      
+      box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+      }
+    
+.nav-item .nav-link {
+  font-family:'Oswald', sans-serif;
+  font-size:15px;
+  font-weight:300;
+  text-transform:uppercase;
+  margin:0px 10px;
+  position:relative;
+  color:white;
+  }
+  
+.nav-item .nav-link:before {
+  position:absolute;
+  left:0;
+  content:"";
+  bottom:0;
+  width:100%;
+  height:2px;
+  transform:scaleX(0);
+  transform-origin:left;
+  background-color:brown;
+  transition:0.5s;
+  }
+  
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } 
+
+
+.nav-item .nav-link:hover:before {
+	  transform:scaleX(1);
+  transform-origin:right;
+	}
+.navbar-brand {
+	text-transform:capitalize;
+	font-size:35px;
+	color:rgb(187, 174, 174);
+	font-style:italic;
+	font-family:'Oswald', sans-serif;
+	font-weight:bold;
+	}
+	
+.navbar-scroll {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-image: linear-gradient(to right bottom, #233666, #24386c, #253b71, #253d77, #26407d, #253f7c, #233d7a, #223c79, #1f3770, #1b3167, #182c5e, #142755);
+	padding:5px 20px;
+	transition:0.5s;
+	animation:scroll 0.6s 1;
+	}
+	
+	@keyframes scroll{
+	0%{transform:translateY(-100%);}
+	100%{transform:translateY(0%);}
+	}
+ 
